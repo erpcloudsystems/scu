@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-11-30 03:08:41.918915",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subdomain",
+  "ip_address",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "subdomain",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "SubDomain"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nnew\nActive\nDisabled\nPending\nSuspended"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-30 03:10:58.642869",
+ "modified_by": "Administrator",
+ "module": "Scu",
+ "name": "Sub Domain",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

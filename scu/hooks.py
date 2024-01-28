@@ -7,6 +7,19 @@ app_description = "Scu customizations"
 app_email = "info@erpcloud.systems"
 app_license = "MIT"
 
+
+doc_events = {
+	"Subscription": {
+		"on_change": "scu.doctype_triggers.subscription.on_change",
+	},
+	"Payment Entry": {
+		"on_submit": "scu.doctype_triggers.payment_entry.on_submit",
+	},
+}
+
+
+
+
 # Includes in <head>
 # ------------------
 
@@ -94,9 +107,9 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+#override_doctype_class = {
+#	"Subscription": "scu.overrides.CustomSubscription"
+#}
 
 # Document Events
 # ---------------

@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:-",
+ "creation": "2022-11-28 15:06:52.026236",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "domain_name",
+  "extension",
+  "status",
+  "primary_name_server",
+  "secondary_name_server",
+  "date",
+  "end_date",
+  "section_break_9",
+  "sub_domain",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "DOM-NAME-"
+  },
+  {
+   "fieldname": "domain_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Domain name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "extension",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Extension",
+   "options": "\n.eg\n.edu.eg\n.com.eg\n.gov.eg\n.net.eg\n.name.eg\n.org.eg\n.sci.eg\n.edu.eg\n.eun.eg\n.gov.eg\n.mil.eg\n.sci.eg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nnew\nActive\nDisabled\nPending\nSuspended",
+   "reqd": 1
+  },
+  {
+   "fieldname": "primary_name_server",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Primary name server",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secondary_name_server",
+   "fieldtype": "Data",
+   "label": "Secondary name server",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Domain Name",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sub_domain",
+   "fieldtype": "Table",
+   "label": "Sub Domains",
+   "options": "Sub Domain"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Domain Request",
+   "link_fieldname": "domain"
+  },
+  {
+   "link_doctype": "Issue",
+   "link_fieldname": "domain"
+  }
+ ],
+ "modified": "2022-11-30 03:09:20.752738",
+ "modified_by": "Administrator",
+ "module": "Scu",
+ "name": "Domain Name",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
